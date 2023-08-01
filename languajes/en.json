@@ -13,6 +13,7 @@
         "design": "Design"
         },
         "projects":{
+            "projects": "Projects: ",
             "project-title-1": "First React Web App, consuming Giphy API",
             "project-description-1": "Web App developed with React, consuming Giphy API, whose function is to search and display animated gifs. I thought it was a good idea to start practicing with React, since it is a simple application, but it allowed me to learn and practice basic React concepts like: components, props, state, hooks, etc. It should be noted that the application is responsive, and adapts to any device. Also I could see that it is faster to develop it with Vite, than with Create React App.For now I can only highlight the use of Framer Motion for the animations.",
             "project-title-2": "WeB Page, Initial Professional Portfolio",
