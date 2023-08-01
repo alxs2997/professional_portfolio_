@@ -1,0 +1,23 @@
+{
+    "profile": {
+        "rol": "Ingeniero en Sistemas",
+        "description": "Me describo como una persona proactiva, que trabaja en equipo, propone ideas y soluciones.",
+        "download": " Descarga mí CV"
+    },
+    "experience": {
+        "first-job-title": "Administrador de Sistemas",
+        "first-job-date": "Mayo 2020 - Marzo 2021",
+        "first-job-description": "Dependiente, manejo de sistema de facturación, sistema de inventarios, base de datos MySQL, control de medicamentos, atención al cliente; manejo de personal.",
+        "work-experience": "Experiencia Laboral",
+        "years-experience": "Años de Experiencia",
+        "design": "Diseño"
+        },
+        "projects":{
+            "project-title-1": "Primera App Web React, consumiendo API Giphy",
+            "project-description-1": "Aplicación web desarrollada con React, consumiendo la API de Giphy, cuya función es buscar y mostrar gifs animados. Me pareció una buena idea para empezar a practicar con React, ya que es una aplicación sencilla, pero que me permitió aprender y practicar conceptos básicos de React como: componentes, props, state, hooks, etc. Cabe destacar que la aplicación es responsive, y se adapta a cualquier dispositivo. Además pude comprobar que es más rapido desarrollarla con Vite, que con Create React App.Por ahora sólo puedo destacar el uso de Framer Motion para las animaciones.",
+            "project-title-2": "Página WeB, Portafolio Profesional Inicial",
+            "project-description-2": "Página web desarrollada con HTML, CSS y JavaScript, cuya función es mostrar mi portafolio profesional, y los proyectos que he realizado hasta el momento. Destacar que es una página responsive, y que se adapta a cualquier dispositivo. Ademas, realize un cambio de tema, para que el usuario pueda elegir entre el modo claro y el modo oscuro y los colores cambien.",
+            "code": "Código"
+        }
+    
+}

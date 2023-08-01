@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <title>alxs2997 | Portafolio</title>
+  <!--FONTAWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--BOXICONS-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="dark">
+  <header class="header">
+    <div class="switches">
+      <div id="toggle-theme" title="change the topic" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="theme icon" class="toggle-theme_icon">
+        <p id="toggle-text" class="toggle-theme_text">Dark Mode</p>
+      </div>
+    </div>
+    <!--Switch MultiLenguaje-->
+    <div id="flags" class="flags">
+      <div class="flags__item" data-languaje="es">
+        <img class="flags__img" src="assets/icons/es.svg" alt="español" title="Spanish">
+      </div>
+      /
+      <div class="flags__item" data-languaje="en">
+        <img class="flags__img" src="assets/icons/gb.svg" alt="English" title="English">
+      </div>
+    </div>
+    <div id="toggle-colors" class="colors">
+      <div data-color="#0B666A" title="Blue" class="colors__item colors__item--Blue"></div>
+      <div data-color="#ACFADF" title="Mint" class="colors__item colors__item--Mint"></div>
+      <div data-color="#435B66" title="Navy" class="colors__item colors__item--Navy"></div>
+      <div data-color="#FF8551" title="Orange" class="colors__item colors__item--Purple"></div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="column column--left">
+      <!--Tarjeta de Perfil-->
+      <article class="card card--profile">
+        <div class="card__image-container no-margin">
+          <img src="assets/images/profile.png" alt="profile-picture" data-aos="fade-up"/>
+          <a data-aos="fade-up" href="assets/curriculum/curricullum-vitae.pdf" title="Download my CV" target="_blank" download>
+            <span data-section="profile" data-value="download"></span>&nbsp;<i
+              class="fas fa-download"></i>
+          </a>
+        </div>
+        <div class="card__header">
+          <h2 class="card__title no-margin">Alexis Gallegos</h2>
+          <p class="card__subtitle" data-section="profile" data-value="rol">Ingeniero en Sistemas</p>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:david7al@gmail.com" title="Email me at" class="link--text">
+                david7alx@gmail.com
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fa-brands fa-linkedin icon"></i>
+              <a href="https://www.linkedin.com/in/alexis-gallegos2997/" title="Contact me on LinkedIn" target="_blank"
+                class="link--text">
+                alexis-gallegos2997
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fa-brands fa-github-alt icon"></i>
+              <a href="https://github.com/alxs2997" target="_blank" title="My GitHub profile " class="link--text">
+                @alxs2997
+              </a>
+            </div>
+            <p class="card__text" data-section="profile" data-value="description">
+              Me describo como una persona proactiva, que trabaja en
+              equipo, propone ideas y soluciones.
+            </p>
+          </div>
+        </div>
+      </article>
+      <!--Tarjeta de Experiencia-->
+      <article class="card card--experience" data-aos="fade-up">
+        <h2 class="card__title" data-section="experience" data-value="work-experience">Experiencia Laboral</h2>
+        <div class="experience">
+          <div class="experiencia__info">
+            <h3 class="experience__job" data-section="experience" data-value="first-job-title">Administrador de Sistemas
+            </h3>
+            <p class="experience__company">Inversiones La Fé (San Rafael/La Fé)</p>
+            <p class="experience__time" data-section="experience" data-value="first-job-date">Mayo 2020 - Marzo 2021</p>
+            <p class="experience__description" data-section="experience" data-value="first-job-description">
+              Dependiente, manejo de sistema de facturación,
+              sistema de inventarios, base de datos MySQL,
+              control de medicamentos, atención al
+              cliente; manejo de personal.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="column column--right">
+      <article class="card" data-aos="fade-up">
+        <h2 class="card__title">Front End</h2>
+        <small data-section="experience" data-value="years-experience">Años de Experiencia:</small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">2</span>
+        </div>
+        <div class="skills">
+          <div class="skills__item">
+            <iconify-icon icon="nonicons:html-16" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> HTML</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="nonicons:css-16" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> CSS</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="nonicons:javascript-16" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> JavaScript</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="uil:react" width="22" higth="22"></iconify-icon>
+            <p class="skills__tech"> React.js</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="akar-icons:vue-fill" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> Vue.js</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-aos="fade-up">
+        <h2 class="card__title">Back End</h2>
+        <small data-section="experience" data-value="years-experience">Años de Experiencia:</small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">2</span>
+        </div>
+        <div class="skills">
+          <div class="skills__item">
+            <iconify-icon icon="teenyicons:laravel-outline"></iconify-icon>
+            <p class="skills__tech"> Laravel</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="akar-icons:node-fill" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> Node.js</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="bxl:mongodb" width="22" higth="22"></iconify-icon>
+            <p class="skills__tech"> MongoDB</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="simple-icons:mariadbfoundation" width="22" higth="22"></iconify-icon>
+            <p class="skills__tech"> MariaDB</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="simple-icons:mysql" width="22" higth="22"></iconify-icon>
+            <p class="skills__tech"> MySQL</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-aos="fade-up">
+        <h2 class="card__title" data-section="experience" data-value="design"></h2>
+        <small data-section="experience" data-value="years-experience">Años de Experiencia:</small>
+        <div class="skills__header">
+          <span class="skills__start-level">0</span>
+          <span class="skills__start-level">5</span>
+        </div>
+        <div class="skills">
+          <div class="skills_tech"></div>
+          <div class="skills__item">
+            <iconify-icon icon="cib:gimp" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> Gimp </p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="simple-icons:inkscape" width="20" higth="20"></iconify-icon>
+            <p class="skills__tech"> Inkscape</p>
+            <div class="skills__bar skills__bar--90"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="basil:adobe-illustrator-outline" width="24" higth="24"></iconify-icon>
+            <p class="skills__tech"> Ilustrator </iconify-icon></p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="basil:adobe-photoshop-outline" width="24" higth="24"></iconify-icon>
+            <p class="skills__tech"> Photoshop </p>
+            <div class="skills__bar skills__bar--30"></div>
+          </div>
+          <div class="skills__item">
+            <iconify-icon icon="iconoir:adobe-indesign" width="24" higth="24"></iconify-icon>
+            <p class="skills__tech"> InDesign </p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+        </div>
+      </article>
+      <div class="card--container" data-aos="fade-up">
+        <article class="card card--project" data-aos="fade-up">
+          <div class="card__image-container2">
+            <img src="https://raw.githubusercontent.com/Giphy/GiphyAPI/master/api_giphy_header.gif" alt="apirest" />
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag" title="HTML5"><i class='bx bxl-html5'></i></box-icon></span>
+              <span class="project__tag" title="JavaScript"><i class='bx bxl-javascript'></i></span>
+              <span class="project__tag" title="CSS3"><i class='bx bxl-css3'></i></box-icon></span>
+              <spam class="project__tag" title="React"><iconify-icon icon="uil:react"></iconify-icon></spam>
+              <span class="project__tag" title="Responsivo">#Responsive</span>
+            </div>
+            <h3 class="card__title" data-section="projects" data-value="project-title-1">Primera App Web React, consumiendo API Giphy</h3>
+            <p class="card__text" data-section="projects" data-value="project-description-1">
+              Aplicación web desarrollada con React, consumiendo la API de Giphy, cuya función es
+               buscar y mostrar gifs animados. Me pareció una buena idea para empezar a 
+               practicar con React, ya que es una aplicación sencilla, pero que me permitió 
+               aprender y practicar conceptos básicos de React como: componentes, props, state, 
+               hooks, etc. Cabe destacar que la aplicación es responsive, y se adapta a cualquier 
+               dispositivo. Además pude comprobar que es más rapido desarrollarla con Vite, que 
+               con Create React App.
+              Por ahora sólo puedo destacar el uso de Framer Motion para las animaciones.
+            </p>
+            <div class="buttons">
+              <a href="https://gif-app-two-navy.vercel.app/" target="_blank" class="button button--primary">
+                Demo
+                <i class="fas fa-external-link-alt button__icon"></i>
+              </a>
+              <a href="https://github.com/alxs2997/gif-app" target="_blank" class="button button--ghost" data-section="projects" data-value="code">
+                Código
+                <i class="fas fa-code button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <div class="card__image-container2">
+            <img src="assets/images/portfolio.gif" alt="apirest" />
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag" title="HTML5"><i class='bx bxl-html5'></i></box-icon></span>
+              <span class="project__tag" title="JavaScript"><i class='bx bxl-javascript'></i></span>
+              <span class="project__tag" title="CSS3"><i class='bx bxl-css3'></i></box-icon></span>
+              <span class="project__tag" title="Responsivo">#Responsive</span>
+            </div>
+            <h3 class="card__title" data-section="projects" data-value="project-title-2">Página WeB, Portafolio Profesional Inicial</h3>
+            <p class="card__text" data-section="projects" data-value="project-description-2">
+              Página web desarrollada con HTML, CSS y JavaScript, cuya función es mostrar mi 
+              portafolio profesional, y los proyectos que he realizado hasta el momento. 
+              Destacar que es una página responsive, y que se adapta a cualquier dispositivo. 
+              Ademas, realize un cambio de tema, para que el usuario pueda elegir 
+              entre el modo claro y el modo oscuro y los colores cambien.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">
+                Demo
+                <i class="fas fa-external-link-alt button__icon"></i>
+              </a>
+              <a href="#" class="button button--ghost" data-section="projects" data-value="code">
+                Código
+                <i class="fas fa-code button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
