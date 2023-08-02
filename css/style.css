@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
 
+/* CSS Variables */
 :root {
     --primary-color: #0B666A;
     --bg-color: #F2EAD3;
-    --bg-card-color: #DFD7BF;
+    --bg-card-color: #dfd7bfe0;
     --border-radius: 0.8em;
     --transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
     --skills-bar-length: 0%;
 }
-
+/* CSS Reset */
 * {
     box-sizing: border-box;
     font-family: 'Victor Mono', monospace;
 }
-
+/* CSS Global */
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -36,7 +37,7 @@ body.dark {
     --bg-card-color: #1d2127e1;
     transition: var(--transition);
 }
-
+/* Para el scroll */
 body::-webkit-scrollbar {
     width: 7px;
     /* width of the entire scrollbar */
@@ -56,7 +57,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid;
     /* creates padding around scroll thumb */
 }
-
+/* CSS Header que contiene la navegación sobre la página */
 .header {
     position: fixed;
     top: 0;
@@ -73,7 +74,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     z-index: 999;
 }
-
+/*Estilo para los switches que cambian el tema de la página*/
 .switches {
     display: flex;
     align-items: center;
@@ -185,6 +186,12 @@ body::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
 }
 
+.shadowne{
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
 .card--container{
     display: grid;
     gap: 0.5em;
@@ -200,7 +207,7 @@ body::-webkit-scrollbar-thumb {
 
 /*damos estilos al scroll del div card--container*/
 .card--container::-webkit-scrollbar {
-    width: 7px;
+    width: 4px;
     /* width of the entire scrollbar */
 }
 
@@ -208,6 +215,14 @@ body::-webkit-scrollbar-thumb {
     background: var(--bg-card-color);
     border-radius: var(--border-radius);
     /* color of the tracking area */
+}
+
+.card--container-on{
+    display: block;
+    gap: 0.5em;
+    background-color: var(--bg-card-color);
+    grid-column: 1 / -1;
+    border-radius: var(--border-radius);
 }
 
 .card--container::-webkit-scrollbar-thumb {
@@ -514,44 +529,3 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
-
-/*Desde acá comienza la parte de los estilos del carrusel*/
-.timeline {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    overflow: scroll;
-}
-
-h1 {
-    text-align: center;
-}
-
-ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.date {
-    font-weight: bold;
-    color: #555;
-}
-
-.event {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.description {
-    color: #888;
-}
-/*Acá terminan los estilos del carrusel*/
-
