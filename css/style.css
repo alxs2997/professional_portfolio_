@@ -197,7 +197,7 @@ body::-webkit-scrollbar-thumb {
     gap: 0.5em;
     /*haremos que este div sea scrolleable*/
     overflow-y: scroll;
-    height: 400px;
+    height: 700px;
     width: 100%;
     background-color: var(--bg-card-color);
     padding: 10px;
@@ -247,7 +247,7 @@ body::-webkit-scrollbar-thumb {
 .card__image-container {
     display: inline-block;
     position: relative;
-    min-width: 320px;
+    min-width: 310px;
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     overflow: hidden;
