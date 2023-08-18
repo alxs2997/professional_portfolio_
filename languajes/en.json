@@ -23,6 +23,9 @@
             "project-title-4": "Favorite Books with Node.js",
             "project-description-4": "Web application developed with Node.js, whose function is to display a list of favorite books, with their respective fields. It uses MongoDB database and Mongoose ORM. JavaScript programming language. It fulfills the basic functions of a CRUD. Create, Read, Update and Delete.",
             "code": "Code"
+        },
+        "footer":{
+            "create":"Created with <i class='bx bxs-heart card__title'></i> by <a href='https://bento.me/alxs2997' target='_blank' title='contact links' class='card__link'>@alxs2997</a>. All rights reserved &copy; 2023"
         }
     
 }
