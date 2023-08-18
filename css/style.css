@@ -9,11 +9,13 @@
     --transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
     --skills-bar-length: 0%;
 }
+
 /* CSS Reset */
 * {
     box-sizing: border-box;
     font-family: 'Victor Mono', monospace;
 }
+
 /* CSS Global */
 a {
     text-decoration: none;
@@ -37,6 +39,7 @@ body.dark {
     --bg-card-color: #1d2127e1;
     transition: var(--transition);
 }
+
 /* Para el scroll */
 body::-webkit-scrollbar {
     width: 7px;
@@ -57,6 +60,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid;
     /* creates padding around scroll thumb */
 }
+
 /* CSS Header que contiene la navegación sobre la página */
 .header {
     position: fixed;
@@ -74,6 +78,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     z-index: 999;
 }
+
 /*Estilo para los switches que cambian el tema de la página*/
 .switches {
     display: flex;
@@ -100,7 +105,7 @@ body::-webkit-scrollbar-thumb {
     transition: var(--transition);
 }
 
-.flags{
+.flags {
     width: 75px;
     display: flex;
     align-items: center;
@@ -111,7 +116,7 @@ body::-webkit-scrollbar-thumb {
     width: 20px;
 }
 
-.flags__img{
+.flags__img {
     display: block;
     cursor: pointer;
 }
@@ -186,13 +191,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
 }
 
-.shadowne{
+.shadowne {
     box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.card--container{
+.card--container {
     display: grid;
     gap: 0.5em;
     /*haremos que este div sea scrolleable*/
@@ -217,7 +222,7 @@ body::-webkit-scrollbar-thumb {
     /* color of the tracking area */
 }
 
-.card--container-on{
+.card--container-on {
     display: block;
     gap: 0.5em;
     background-color: var(--bg-card-color);
@@ -429,7 +434,7 @@ body::-webkit-scrollbar-thumb {
     transition: var(--transition);
 }
 
-.project{
+.project {
     position: relative;
 }
 
@@ -532,44 +537,58 @@ body::-webkit-scrollbar-thumb {
 
 /* CSS Footer */
 
+.card--container-foo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--bg-color);
+    grid-column: 1 / -1;
+    border: var(--text-color) solid 0.5px;
+    border-radius: 10px;
+}
+
+
 .footer {
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: 75px;
-    padding: 0 1.5em;
-    overflow: hidden;
-    z-index: 999;
+    height: 100px;
+    background-color: var(--bg-card-color);
+    border-top: solid 0.5px;
+    transition: var(--transition);
 }
 
-.footer .left--footer {
+.footer__container {
+    margin-top: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 175px;
-    margin-left: 0.2em;
+    padding: 20px 0;
 }
 
-.footer .left--footer p {
-    font-size: 1rem;
+.footer__container .columnium--right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
-.footer .right--footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    gap: 0.5em;
+.footer__container .social-icons {
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
-.footer .right--footer a{
-    margin-right: 0.2em;
-    font-size: 1.5rem;
+
+.social-icons a {
+    margin: 0 5px;
+    font-size: 1.5em;
 }
 
-.footer .right--footer a:hover{
+.social-icons a:hover {
     color: var(--primary-color);
     transition: var(--transition);
 }
