@@ -8,6 +8,8 @@
     --border-radius: 0.8em;
     --transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
     --skills-bar-length: 0%;
+    --left: 0px;
+    --top: 0px;
 }
 
 /* CSS Reset */
@@ -189,7 +191,35 @@ body::-webkit-scrollbar-thumb {
     transition: var(--transition);
     border: 0.5px solid;
     border-radius: var(--border-radius);
+    --left: 0px;
+    --top: 0px;
 }
+
+/* Hacemos un seguimiento del mouse */
+.card::before {
+    content: '';
+    background: var(--text-color);
+    border-radius: var(--border-radius);
+    width: 10rem;
+    height: 10rem;
+
+    position: absolute;
+    left: var(--left);
+    top: var(--top);
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: -10;
+
+    filter: blur(50px);
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::before {
+    opacity: 0.2;
+}
+
+
 
 .shadowne {
     box-shadow:
@@ -539,6 +569,7 @@ body::-webkit-scrollbar-thumb {
 
 .card--container-foo {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
@@ -568,24 +599,17 @@ body::-webkit-scrollbar-thumb {
     padding: 20px 0;
 }
 
-.footer__container .columnium--right{
+.footer__container .social-icons{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 5px 0;
 }
-
-.footer__container .social-icons {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
 
 .social-icons a {
-    margin: 0 5px;
-    font-size: 1.5em;
+    margin: 8px;
+    font-size: 20px;
 }
 
 .social-icons a:hover {
