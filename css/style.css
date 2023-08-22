@@ -296,8 +296,6 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-
-
 .card__image-container a {
     position: absolute;
     bottom: 1em;
