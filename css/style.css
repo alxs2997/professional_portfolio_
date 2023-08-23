@@ -329,37 +329,9 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
 }
 
-.maquina-escribir{
-    display: block;
-    white-space: nowrap;
-    /* los espacios en blanco no rompen la línea */
-    width: 30ch;
-    /* el ancho será el número de caracteres que tiene nuestra línea */
-    animation: escribiendo 7s steps(20);
-    /* steps(20) indica que se mostrarán 20 frames de la animación */
-    overflow: hidden;
-    /* no se mostrará nada que se salga del ancho definido */
-}
-
-.cursor {
-    animation: 0.6s parpadeo-cursor infinite;
+.card__subtitle .profession {
     color: var(--primary-color);
 }
-
-/*animación tipo type*/
-
-
-@keyframes escribiendo {
-    from {
-      width: 0;
-    }
-  }
-
-  @keyframes parpadeo-cursor {
-    50% {
-      opacity: 0;
-    }
-  }
 
 .card__link {
     margin-bottom: 0.5em;

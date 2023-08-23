@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -64,7 +64,15 @@
         </div>
         <div class="card__header" data-aos="fade-up">
           <h2 class="card__title no-margin">Alexis Gallegos</h2>
-          <p class="card__subtitle maquina-escribir" data-section="profile" data-value="rol">Ingeniero en Sistemas<span class="cursor">|</span></p>
+          <p class="card__subtitle">
+              	<span class="typed"></span>
+          </p>
+          <div class="card__subtitle" id="cadenas-texto">
+            <p data-section="profile" data-value="rol">Soy: <i class="profession">Ingeniero en Sistemas</i></p>
+            <p data-section="profile" data-value="rol">Soy: <i class="profession">Programador</i></p>
+            <p data-section="profile" data-value="rol">Soy: <i class="profession">Diseñador Web</i></p>
+          </div>
+          
           <div class="card__body">
             <div class="card__link">
               <i class="fas fa-envelope icon"></i>
@@ -395,6 +403,30 @@
       </div>
     </footer>
   </main>
+  <!--SCRIPTS-->
+  <!--Typed.js-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    const typed = new Typed('.typed', {
+      /*strings: [
+        '<i class="profession">Ingeniero en Sistemas</i>',
+        '<i class="profession">Editor Multimedia</i>',
+        '<i class="profession">Diseñador Web</i>'
+      ],*/
+      stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+      typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+      startDelay: 2000, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+      backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+      smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+      shuffle: false, // Alterar el orden en el que escribe las palabras.
+      backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+      loop: true, // Repetir el array de strings
+      loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+      showCursor: true, // Mostrar cursor palpitanto
+      cursorChar: '_', // Caracter para el cursor
+      contentType: 'html', // 'html' o 'null' para texto sin formato
+    });
+  </script>
   <!--ANIMATE .JS-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!--FUNCIONAMIENTO .JS-->
