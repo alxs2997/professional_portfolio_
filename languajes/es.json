@@ -1,8 +1,13 @@
 {
     "profile": {
-        "rol": "Ingeniero en Sistemas",
+        "rol": "Soy: ",
         "description": "Me describo como una persona proactiva, que trabaja en equipo, propone ideas y soluciones.",
         "download": " Descarga mí CV"
+    },
+    "professions":{
+        "profession1": "<i class='profession'>Ingeniero en Sistemas</i>",
+        "profession2": "<i class='profession'>Programador</i>",
+        "profession3": "<i class='profession'>Diseñador Web</i>"
     },
     "experience": {
         "first-job-title": "Administrador de Sistemas",
