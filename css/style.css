@@ -333,9 +333,9 @@ body::-webkit-scrollbar-thumb {
     display: block;
     white-space: nowrap;
     /* los espacios en blanco no rompen la línea */
-    width: 100%;
+    width: 30ch;
     /* el ancho será el número de caracteres que tiene nuestra línea */
-    animation: escribiendo 4s steps(20);
+    animation: escribiendo 7s steps(20);
     /* steps(20) indica que se mostrarán 20 frames de la animación */
     overflow: hidden;
     /* no se mostrará nada que se salga del ancho definido */
