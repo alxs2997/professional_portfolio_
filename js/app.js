@@ -39,11 +39,11 @@ function updateUIToUserConfig(config) {
   toggleIcon.src = config.darkMode ? 'assets/icons/moon.svg' : 'assets/icons/sun.svg';
   toggleText.textContent = config.darkMode ? 'Dark Mode' : 'Light Mode';
 
-   // Establecer el idioma seleccionado por el usuario, en caso de que exista
-   const userLanguage = localStorage.getItem('userLanguage');
-   if (userLanguage) {
-     changeLanguage(userLanguage);
-   }
+  // Establecer el idioma seleccionado por el usuario, en caso de que exista
+  const userLanguage = localStorage.getItem('userLanguage');
+  if (userLanguage) {
+    changeLanguage(userLanguage);
+  }
 }
 
 // Recuperar la configuración del usuario del localStorage (si existe)
@@ -96,4 +96,27 @@ cards.forEach(card => {
     card.style.setProperty('--left', `${left}px`);
     card.style.setProperty('--top', `${top}px`);
   });
+});
+
+/* Para que funcione el efecto typing con la libreria Typed.js */
+
+const typed = new Typed('.typed', {
+  /*strings: [
+    '<i class="profession" data-section="professions" data-value="profession1">Ingeniero en Sistemas</i>',
+    '<i class="profession" data-section="professions" data-value="profession2">Programador Web</i>',
+    '<i class="profession" data-section="professions" data-value="profession3">Diseñador Web</i>',
+    '<i class="profession" data-section="professions" data-value="profession2">Editor de Contenido Digital</i>'
+  ],*/
+  stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+  typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+  startDelay: 1050, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+  backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+  smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+  shuffle: false, // Alterar el orden en el que escribe las palabras.
+  backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+  loop: true, // Repetir el array de strings
+  loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+  showCursor: true, // Mostrar cursor palpitanto
+  cursorChar: '_', // Caracter para el cursor
+  contentType: 'html', // 'html' o 'null' para texto sin formato
 });
