@@ -324,35 +324,42 @@ body::-webkit-scrollbar-thumb {
     color: var(--primary-color);
 }
 
-.card__subtitle p {
+.card__subtitle {
     opacity: 0.8;
     font-size: 1rem;
+}
 
-    width: 0;
-    overflow: hidden;
+.maquina-escribir{
+    display: block;
     white-space: nowrap;
-    margin: 0 auto;
-    border-right: 0.15em solid #18bdec;
-    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+    /* los espacios en blanco no rompen la línea */
+    width: 23ch;
+    /* el ancho será el número de caracteres que tiene nuestra línea */
+    animation: escribiendo 4s steps(20);
+    /* steps(20) indica que se mostrarán 20 frames de la animación */
+    overflow: hidden;
+    /* no se mostrará nada que se salga del ancho definido */
+}
+
+.cursor {
+    animation: 0.6s parpadeo-cursor infinite;
+    color: var(--primary-color);
 }
 
 /*animación tipo type*/
 
-@keyframes typing {
+
+@keyframes escribiendo {
     from {
-        width: 0;
+      width: 0;
     }
+  }
 
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
+  @keyframes parpadeo-cursor {
     50% {
-        border-color: transparent;
+      opacity: 0;
     }
-}
+  }
 
 .card__link {
     margin-bottom: 0.5em;
