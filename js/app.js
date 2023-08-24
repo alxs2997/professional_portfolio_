@@ -120,3 +120,13 @@ const typed = new Typed('.typed', {
   cursorChar: '_', // Caracter para el cursor
   contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+const numero = document.getElementById('numero');
+let Cantidad = 0;
+
+let tiempo = setInterval(() => {
+  if (Cantidad < 5) {
+    Cantidad++;
+    numero.textContent = Cantidad;
+  }
+}, 500);
