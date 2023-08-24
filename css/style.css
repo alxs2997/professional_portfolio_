@@ -161,6 +161,8 @@ body::-webkit-scrollbar-thumb {
     padding: 0.7em;
     gap: 0.7em;
     padding-top: 75px;
+    --left: 0px;
+    --top: 0px;
 }
 
 @media screen and (min-width: 720px) {
@@ -191,15 +193,13 @@ body::-webkit-scrollbar-thumb {
     transition: var(--transition);
     border: 0.5px solid;
     border-radius: var(--border-radius);
-    --left: 0px;
-    --top: 0px;
 }
 
 /* Hacemos un seguimiento del mouse */
-.card::before {
+.main::before {
     content: '';
     background: var(--text-color);
-    border-radius: 50%;
+    border-radius: var(--border-radius);
     width: 10rem;
     height: 10rem;
 
@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
     left: var(--left);
     top: var(--top);
     transform: translate(-50%, -50%) scale(1.5);
-    z-index: -10;
+    z-index: -50;
 
     filter: blur(50px);
 
@@ -215,8 +215,8 @@ body::-webkit-scrollbar-thumb {
     transition: opacity 0.3s ease-in-out;
 }
 
-.card:hover::before {
-    opacity: 0.2;
+.main:hover::before {
+    opacity: 0.8;
 }
 
 

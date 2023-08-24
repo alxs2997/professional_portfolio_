@@ -84,17 +84,17 @@ toggleColors.addEventListener('click', (e) => {
 
 //función para mover el circulo de las tarjetas con blur en before de .card solo en el modo noche
 
-const cards = document.querySelectorAll('.card');
+const main = document.querySelectorAll('.main');
 
-cards.forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
+main.forEach(main => {
+  main.addEventListener('mousemove', (e) => {
+    const rect = main.getBoundingClientRect();
 
     const left = e.clientX - rect.left;
     const top = e.clientY - rect.top;
 
-    card.style.setProperty('--left', `${left}px`);
-    card.style.setProperty('--top', `${top}px`);
+    main.style.setProperty('--left', `${left}px`);
+    main.style.setProperty('--top', `${top}px`);
   });
 });
 
