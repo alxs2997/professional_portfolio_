@@ -161,6 +161,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0.7em;
     gap: 0.7em;
     padding-top: 75px;
+    overflow: hidden; /*para que no se vea el scroll*/
     --left: 0px;
     --top: 0px;
 }
