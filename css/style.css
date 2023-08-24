@@ -166,7 +166,7 @@ body::-webkit-scrollbar-thumb {
     --top: 0px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 640px) {
     .main {
         grid-template-columns: min-content 1fr;
         padding-top: 90px;

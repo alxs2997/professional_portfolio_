@@ -30,7 +30,7 @@
             "code": "Code"
         },
         "footer":{
-            "create":"Created with <i class='bx bxs-heart card__title'></i> by <a href='https://bento.me/alxs2997' target='_blank' title='contact links' class='card__link'>@alxs2997</a>. All rights reserved &copy; 2023"
+            "create":"Created by <a href='https://bento.me/alxs2997' target='_blank' title='contact links' class='card__link'>@alxs2997</a>. All rights reserved &copy; 2023"
         }
     
 }
