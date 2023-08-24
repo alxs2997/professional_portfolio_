@@ -572,7 +572,6 @@ body::-webkit-scrollbar-thumb {
 
 .card--container-foo {
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
@@ -587,7 +586,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 80px;
     background-color: var(--bg-card-color);
     border-top: solid 0.5px;
     transition: var(--transition);
