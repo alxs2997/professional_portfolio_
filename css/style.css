@@ -160,13 +160,12 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     padding: 0.7em;
     gap: 0.7em;
-    padding-top: 75px;
-    overflow: hidden; /*para que no se vea el scroll*/
+    padding-top: 80px;
     --left: 0px;
     --top: 0px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
     .main {
         grid-template-columns: min-content 1fr;
         padding-top: 90px;
