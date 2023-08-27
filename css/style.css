@@ -197,7 +197,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Hacemos un seguimiento del mouse */
-.main::before {
+/*.main::before {
     content: '';
     background: var(--text-color);
     border-radius: var(--border-radius);
@@ -218,7 +218,7 @@ body::-webkit-scrollbar-thumb {
 
 .main:hover::before {
     opacity: 0.8;
-}
+}*/
 
 
 

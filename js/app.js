@@ -82,22 +82,6 @@ toggleColors.addEventListener('click', (e) => {
   updateColorToUserConfig(selectedColor);
 });
 
-//función para mover el circulo de las tarjetas con blur en before de .card solo en el modo noche
-
-const main = document.querySelectorAll('.main');
-
-main.forEach(main => {
-  main.addEventListener('mousemove', (e) => {
-    const rect = main.getBoundingClientRect();
-
-    const left = e.clientX - rect.left;
-    const top = e.clientY - rect.top;
-
-    main.style.setProperty('--left', `${left}px`);
-    main.style.setProperty('--top', `${top}px`);
-  });
-});
-
 /* Para que funcione el efecto typing con la libreria Typed.js */
 
 const typed = new Typed('.typed', {
