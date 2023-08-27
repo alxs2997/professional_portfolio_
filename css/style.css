@@ -571,14 +571,16 @@ body::-webkit-scrollbar-thumb {
 /* CSS Footer */
 
 .card--container-foo {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     background-color: var(--bg-color);
     grid-column: 1 / -1;
-    border: var(--text-color) solid 0.5px;
-    border-radius: 10px;
 }
 
 
@@ -586,7 +588,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 58px;
     background-color: var(--bg-card-color);
     border-top: solid 0.5px;
     transition: var(--transition);
@@ -599,22 +601,4 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-}
-
-.footer__container .social-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.social-icons a {
-    margin: 8px;
-    font-size: 20px;
-}
-
-.social-icons a:hover {
-    color: var(--primary-color);
-    transition: var(--transition);
 }
