@@ -17,6 +17,10 @@
 * {
     box-sizing: border-box;
     font-family: 'Victor Mono', monospace;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 /* CSS Global */
@@ -75,6 +79,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     height: 75px;
     padding: 0 1.5em;
+    border-radius: 0 0 10px 10px;
     border: solid 0.5px;
     background-color: var(--bg-card-color);
     transition: var(--transition);
@@ -162,8 +167,6 @@ body::-webkit-scrollbar-thumb {
     padding: 0.7em;
     gap: 0.7em;
     padding-top: 80px;
-    --left: 0px;
-    --top: 0px;
 }
 
 @media screen and (min-width: 720px) {
@@ -197,7 +200,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Hacemos un seguimiento del mouse */
-.main::before {
+.roun::before {
     content: '';
     background: var(--text-color);
     border-radius: var(--border-radius);
@@ -216,8 +219,8 @@ body::-webkit-scrollbar-thumb {
     transition: opacity 0.3s ease-in-out;
 }
 
-.main:hover::before {
-    opacity: 0.8;
+.roun:hover::before {
+    opacity: 0.7;
 }
 
 
@@ -571,14 +574,17 @@ body::-webkit-scrollbar-thumb {
 /* CSS Footer */
 
 .card--container-foo {
-    display: flex;
+    position: bottom;
+    margin-bottom: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     background-color: var(--bg-color);
     grid-column: 1 / -1;
-    border: var(--text-color) solid 0.5px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -607,14 +613,4 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-}
-
-.social-icons a {
-    margin: 8px;
-    font-size: 20px;
-}
-
-.social-icons a:hover {
-    color: var(--primary-color);
-    transition: var(--transition);
 }
