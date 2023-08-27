@@ -17,8 +17,8 @@
 * {
     box-sizing: border-box;
     font-family: 'Victor Mono', monospace;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 /* CSS Global */
@@ -77,7 +77,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     height: 75px;
     padding: 0 1.5em;
-    border-radius: 0 0 10px 10px;
     border: solid 0.5px;
     background-color: var(--bg-card-color);
     transition: var(--transition);
@@ -165,6 +164,8 @@ body::-webkit-scrollbar-thumb {
     padding: 0.7em;
     gap: 0.7em;
     padding-top: 80px;
+    --left: 0px;
+    --top: 0px;
 }
 
 @media screen and (min-width: 720px) {
@@ -198,17 +199,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Hacemos un seguimiento del mouse */
-.roun::before {
+.main::before {
     content: '';
     background: var(--text-color);
     border-radius: var(--border-radius);
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
 
     position: absolute;
     left: var(--left);
     top: var(--top);
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.5);
     z-index: -50;
 
     filter: blur(50px);
@@ -217,8 +218,8 @@ body::-webkit-scrollbar-thumb {
     transition: opacity 0.3s ease-in-out;
 }
 
-.roun:hover::before {
-    opacity: 0.5;
+.main:hover::before {
+    opacity: 0.8;
 }
 
 
@@ -572,17 +573,15 @@ body::-webkit-scrollbar-thumb {
 /* CSS Footer */
 
 .card--container-foo {
-    position: bottom;
-    margin-bottom: 0%;
+    position: relative;
+    display: flex;
     bottom: 0;
     left: 0;
     right: 0;
-    justify-content: space-between;
     align-items: center;
     padding: 1em;
     background-color: var(--bg-color);
     grid-column: 1 / -1;
-    border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -590,10 +589,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 4rem;
     background-color: var(--bg-card-color);
-    border-top: solid 0.5px;
-    transition: var(--transition);
 }
 
 .footer__container {
@@ -605,10 +602,3 @@ body::-webkit-scrollbar-thumb {
     padding: 20px 0;
 }
 
-.footer__container .social-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-}
