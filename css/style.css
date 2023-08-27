@@ -5,7 +5,7 @@
     --primary-color: #0B666A;
     --bg-color: #F2EAD3;
     --bg-card-color: #dfd7bfe0;
-    --bg-card-color2: #dfd7bf;
+    --bg-footer-color: #dfd7bf;
     --border-radius: 0.8em;
     --transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
     --skills-bar-length: 0%;
@@ -40,6 +40,7 @@ body.dark {
     --text-color: #50d890;
     --bg-color: #232931;
     --bg-card-color: #1d2127e1;
+    --bg-footer-color: #1d2127;
     transition: var(--transition);
 }
 
@@ -76,6 +77,7 @@ body::-webkit-scrollbar-thumb {
     height: 75px;
     padding: 0 1.5em;
     border: solid 0.5px;
+    border-radius: 0 0 10px 10px;
     background-color: var(--bg-card-color);
     transition: var(--transition);
     overflow: hidden;
@@ -580,7 +582,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: var(--bg-color);
+    background-color: var(--bg-footer-color);
     grid-column: 1 / -1;
 }
 
@@ -590,16 +592,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     height: 58px;
-    background-color: var(--bg-card-color);
+    background-color: var(--bg-footer-color);
     border-top: solid 0.5px;
     transition: var(--transition);
 }
 
-.footer__container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
