@@ -314,15 +314,16 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 720px) {
     .download-cv {
-        margin-left: 0;
+        margin-left: 0.8;
         margin-right: 0;
     }
 }
 
-.card__image-container  a {
+.card__image-container .download-cv a {
     position: absolute;
     bottom: 1em;
-    right: 4em;
+    left: 18%;
+    right: 18%;
     background-color: #2d597734;
     border: var(--primary-color) solid 1px;
     border-radius: 20px;
@@ -330,12 +331,27 @@ body::-webkit-scrollbar-thumb {
     padding: 1em 1em;
 }
 
-.card__image-container a:hover {
+
+.card__image-container .download-cv a:hover {
     border: var(--text-color) solid 1px;
     color: var(--text-color);
     background-color: var(--bg-card-color);
     transition: var(--transition);
 }
+
+.card__image-container .download-cv span {
+    align-items: center;
+}
+
+/*media query para que el botón no se extienda de más en pantallas pequeñas*/
+
+@media screen and (max-width: 720px) {
+    .card__image-container .download-cv a {
+        left: 26%;
+        right: 26%;
+    }
+}
+
 
 .card__header {
     padding: 1em 0;
