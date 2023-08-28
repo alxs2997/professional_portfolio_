@@ -55,10 +55,9 @@
         <div class="card__image-container no-margin">
           <img src="assets/images/profile.png" alt="profile-picture" data-aos="fade-up" />
           <div class="download-cv">
-            <a data-aos="fade-up" href="assets/curriculum/curricullum-vitae.pdf" title="Download my CV" target="_blank"
-              download>
-              <span data-section="profile" data-value="download">Descarga CV</span>
-              <i class="fas fa-download"></i>
+            <a data-aos="fade-up" href="#openModal" title="Open CV Preview">
+              <span data-section="profile" data-value="download">Descargar mí CV</span>&nbsp;
+              <i class="fas fa-eye"></i>
             </a>
           </div>
         </div>
@@ -420,6 +419,21 @@
       </a>
     </div>
   </footer>
+  <div id="openModal" class="modalDialog">
+    <div class="card border">
+      <a href="#close" title="Close" class="close">X</a>
+      <h3 class="card__title" data-section="profile" data-value="download">Descarga mí CV</h3>
+      <div class="modal-content">
+        <iframe class="mostrarpdf" src="assets/curriculum/curricullum-vitae.pdf" frameborder="0"></iframe>
+        <div class="seccion__descarga">
+          <a data-aos="fade-up" class="button--modal" href="assets/curriculum/curricullum-vitae.pdf" title="Download CV" download>
+            <span data-section="profile" data-value="download">Descargar CV</span>&nbsp;
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--SCRIPTS-->
   <!--Typed.js-->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

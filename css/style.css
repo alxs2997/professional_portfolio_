@@ -199,6 +199,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
 }
 
+/*estilos para el modal*/
+
+
+
 /* Hacemos un seguimiento del mouse */
 /*.main::before {
     content: '';
@@ -274,7 +278,7 @@ body::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 720px) {
     .card--project {
         display: grid;
         grid-template-columns: min-content 1fr;
@@ -300,14 +304,13 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.download-cv{
+.download-cv {
     display: flex;
     justify-content: center center;
+    align-items: center;
     min-width: 320px;
     border-radius: var(--border-radius);
     overflow: hidden;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 /* media query para download cv que se mantenga al centro sin margenes derechos ni izquierdos*/
@@ -317,6 +320,7 @@ body::-webkit-scrollbar-thumb {
         margin-left: 0.8;
         margin-right: 0;
     }
+
     /*ocultar icono de descarga en dispositivos pequeños*/
     .download-cv i {
         display: none;
@@ -326,13 +330,18 @@ body::-webkit-scrollbar-thumb {
 .card__image-container .download-cv a {
     position: absolute;
     bottom: 1em;
-    left: 18%;
-    right: 18%;
+    left: 1em;
+    right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #2d597734;
     border: var(--primary-color) solid 1px;
     border-radius: 20px;
     color: var(--primary-color);
     padding: 1em 1em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -642,7 +651,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.footer p{
+.footer p {
     font-size: 1rem;
     text-align: center;
     margin: 0;
@@ -685,7 +694,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.line{
+.line {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     width: 100%;
@@ -726,4 +735,157 @@ body::-webkit-scrollbar-thumb {
 
 .button--up i {
     font-size: 1.5rem;
+}
+
+/*estilos para el modal*/
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.625);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog .border {
+    width: 700px;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: var(--bg-card-color);
+    background: -moz-linear-gradient(#232931);
+    background: -webkit-linear-gradient(#232931, #0B666A);
+    background: -o-linear-gradient(#232931, #0B666A);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.close {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.modal__content {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrarpdf {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--border-radius);
+    overflow-y: auto;
+}
+
+/*estilos para el scroll del modal*/
+
+.mostrarpdf::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.mostrarpdf::-webkit-scrollbar-track {
+    background: var(--bg-card-color);
+    border-radius: var(--border-radius);
+    /* color of the tracking area */
+}
+
+.mostrarpdf::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: var(--primary-color);
+    /* color of the scroll thumb */
+    border-radius: 50px;
+    /* roundness of the scroll thumb */
+    border: 1px solid;
+    /* creates padding around scroll thumb */
+}
+
+/*estilos para sección descarga*/
+
+.seccion__descarga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 7px;
+}
+/*estilos para el botón de descarga del modal*/
+
+.button--modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: var(--primary-color) solid 1px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.button--modal:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.button--modal i {
+    font-size: 1.5rem;
+}
+
+/*media query para adaptar el modal a smartphones*/
+
+@media screen and (max-width: 720px) {
+    .modalDialog .border {
+        width: 90%;
+    }
+}
+
+/*media query para adaptar el modal a tablets*/
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    .modalDialog .border {
+        width: 90%;
+    }
 }
