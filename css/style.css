@@ -627,12 +627,10 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 
-/*media query para que el logo y links no se alejen mucho del borde en dispositivos móviles*/
-
 .footer .links--container {
     display: flex;
     font-size: 23px;
-    margin-right: 3em;
+    margin-right: 0.5em;
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
