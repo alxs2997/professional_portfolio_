@@ -604,7 +604,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 720px) {
     .footer {
-        width: 100%;
+        width: 108%;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -628,12 +628,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*media query para que el logo y links no se alejen mucho del borde en dispositivos móviles*/
-
-@media screen and (max-width: 720px) {
-    .footer .footer--logo, .footer .links--container {
-        margin-bottom: 0.5em;
-    }
-}
 
 .footer .links--container {
     display: flex;
