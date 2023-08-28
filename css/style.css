@@ -745,7 +745,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.625);
+    background: rgba(0, 0, 0, 0.805);
     z-index: 99999;
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
@@ -766,12 +766,6 @@ body::-webkit-scrollbar-thumb {
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: var(--bg-card-color);
-    background: -moz-linear-gradient(#232931);
-    background: -webkit-linear-gradient(#232931, #0B666A);
-    background: -o-linear-gradient(#232931, #0B666A);
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
 }
 
 .close {
@@ -788,8 +782,6 @@ body::-webkit-scrollbar-thumb {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
 
