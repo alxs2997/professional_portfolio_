@@ -310,6 +310,15 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0;
 }
 
+/* media query para download cv que se mantenga al centro sin margenes derechos ni izquierdos*/
+
+@media screen and (max-width: 720px) {
+    .download-cv {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .card__image-container  a {
     position: absolute;
     bottom: 1em;
