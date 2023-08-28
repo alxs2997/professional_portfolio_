@@ -300,7 +300,17 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.card__image-container a {
+.download-cv{
+    display: flex;
+    justify-content: center center;
+    min-width: 320px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card__image-container  a {
     position: absolute;
     bottom: 1em;
     right: 4em;
