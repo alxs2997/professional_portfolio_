@@ -641,9 +641,9 @@ body::-webkit-scrollbar-thumb {
 
 /*media query para que el contenido se forme en una sola columna*/
 
-@media screen and (max-width:  420px) {
+@media screen and (max-width: 720px) {
     .footer {
-        width: 100%;
+        width: 109%;
         left: 0;
         right: 0;
         flex-direction: column;
