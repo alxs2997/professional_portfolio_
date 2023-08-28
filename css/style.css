@@ -573,6 +573,7 @@ body::-webkit-scrollbar-thumb {
 /* CSS Footer */
 
 .footer {
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -630,8 +631,6 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 720px) {
     .footer .footer--logo, .footer .links--container {
         margin-bottom: 0.5em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
     }
 }
 
