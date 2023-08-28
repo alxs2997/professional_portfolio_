@@ -630,11 +630,19 @@ body::-webkit-scrollbar-thumb {
 .footer .links--container {
     display: flex;
     font-size: 23px;
-    margin-right: 0.5em;
+    margin-right: 2.5em;
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
     gap: 1em;
+}
+
+/*media query para quitar el margen derecho de los links en pantallas pequeñas*/
+
+@media screen and (max-width: 720px) {
+    .footer .links--container {
+        margin-right: 0;
+    }
 }
 
 
