@@ -17,6 +17,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Victor Mono', monospace;
+    scroll-behavior: smooth;
 }
 
 /* CSS Global */
@@ -40,7 +41,7 @@ body.dark {
     --text-color: #50d890;
     --bg-color: #232931;
     --bg-card-color: #1d2127e1;
-    --bg-footer-color: #352F44;
+    --bg-footer-color: #1d2127e1;
     transition: var(--transition);
 }
 
@@ -164,7 +165,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0.7em;
     gap: 0.7em;
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 
 @media screen and (min-width: 720px) {
@@ -234,7 +235,7 @@ body::-webkit-scrollbar-thumb {
     gap: 0.5em;
     /*haremos que este div sea scrolleable*/
     overflow-y: scroll;
-    height: 700px;
+    height: 755px;
     width: 100%;
     background-color: var(--bg-card-color);
     padding: 10px;
@@ -571,8 +572,7 @@ body::-webkit-scrollbar-thumb {
 
 /* CSS Footer */
 
-.card--container-foo {
-    position: fixed;
+.footer {
     bottom: 0;
     left: 0;
     right: 0;
@@ -581,17 +581,95 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding-top: 30px;
+    padding: 2em;
+    border-top: var(--primary-color) solid 2px;
     background-color: var(--bg-footer-color);
     color: var(--text-color);
 }
 
+.footer p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5em;
+    color: var(--text-color);
+}
 
-.footer {
+/*media query para que el contenido se forme en una sola columna*/
+
+@media screen and (max-width: 720px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer .footer--logo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 58px;
-    border-top: var(--primary-color) solid 0.5px;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    gap: 0.5em;
+}
+
+.footer .footer--logo span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.footer .links--container {
+    display: flex;
+    font-size: 23px;
+    margin-right: 0.5em;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.line{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+/*estilo para el botón de volver arriba*/
+
+.button--up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: var(--primary-color) solid 1px;
+    outline: none;
+    cursor: pointer;
     transition: var(--transition);
+}
+
+.button--up_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button--up:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.button--up i {
+    font-size: 1.5rem;
 }

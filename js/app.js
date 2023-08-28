@@ -114,3 +114,19 @@ let tiempo = setInterval(() => {
     numero.textContent = Cantidad;
   }
 }, 500);
+
+/* scroll para botón de volver arriba */
+
+const btnScroll = document.querySelector('.scroll-top');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    btnScroll.classList.add('scroll-top-active');
+  } else {
+    btnScroll.classList.remove('scroll-top-active');
+  }
+});
+
+btnScroll.addEventListener('click', () => {
+  window.scrollTo(0, 0);
+});
