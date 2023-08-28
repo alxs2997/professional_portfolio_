@@ -629,16 +629,6 @@ body::-webkit-scrollbar-thumb {
     color: var(--text-color);
 }
 
-.footer p{
-    font-size: 1rem;
-    text-align: center;
-    margin: 0;
-    left: 0;
-    right: 0;
-    margin-top: 0.5em;
-    color: var(--text-color);
-}
-
 /*media query para que el contenido se forme en una sola columna*/
 
 @media screen and (max-width: 720px) {
@@ -650,6 +640,16 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         justify-content: center;
     }
+}
+
+.footer p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0.5em;
+    color: var(--text-color);
 }
 
 .footer .footer--logo {
