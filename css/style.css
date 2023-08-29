@@ -317,13 +317,8 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 720px) {
     .download-cv {
-        margin-left: 0.8;
+        margin-left: 0;
         margin-right: 0;
-    }
-
-    /*ocultar icono de descarga en dispositivos pequeños*/
-    .download-cv i {
-        display: none;
     }
 }
 
@@ -360,8 +355,8 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 720px) {
     .card__image-container .download-cv a {
-        left: 30%;
-        right: 30%;
+        left: 15%;
+        right: 15%;
     }
 }
 
