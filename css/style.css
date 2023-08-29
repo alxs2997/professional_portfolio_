@@ -760,7 +760,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .modalDialog .border {
-    width: 700px;
+    width: 895px;
     position: relative;
     margin: 2% auto;
     padding: 5px 20px 13px 20px;
@@ -792,7 +792,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .modal__content {
-    height: 600px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
