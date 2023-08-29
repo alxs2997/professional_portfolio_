@@ -199,36 +199,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
 }
 
-/*estilos para el modal*/
-
-
-
-/* Hacemos un seguimiento del mouse */
-/*.main::before {
-    content: '';
-    background: var(--text-color);
-    border-radius: var(--border-radius);
-    width: 10rem;
-    height: 10rem;
-
-    position: absolute;
-    left: var(--left);
-    top: var(--top);
-    transform: translate(-50%, -50%) scale(1.5);
-    z-index: -50;
-
-    filter: blur(50px);
-
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.main:hover::before {
-    opacity: 0.8;
-}*/
-
-
-
 .shadowne {
     box-shadow:
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
