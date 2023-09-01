@@ -692,6 +692,8 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
 }
 
+/*para github*/
+
 .button--up:hover {
     background-color: var(--bg-color);
     color: var(--primary-color);
