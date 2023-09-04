@@ -145,19 +145,15 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.colors__item--Blue {
+.colors__item--Navy {
     background-color: #0B666A;
 }
 
-.colors__item--Mint {
-    background-color: #ACFADF;
+.colors__item--Salmon {
+    background-color: #CA4E79;
 }
 
-.colors__item--Navy {
-    background-color: #435B66;
-}
-
-.colors__item--Purple {
+.colors__item--Orange {
     background-color: #FF8551;
 }
 
