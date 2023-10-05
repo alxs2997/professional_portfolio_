@@ -23,7 +23,7 @@
             "project-description-1": "Aplicación web desarrollada con React, consumiendo la API de Giphy, cuya función es buscar y mostrar gifs animados. Me pareció una buena idea para empezar a practicar con React, ya que es una aplicación sencilla, pero que me permitió aprender y practicar conceptos básicos de React como: componentes, props, state, hooks, etc.",
             "project-title-2": "Encriptador de Mensajes.",
             "project-description-2": "Herramienta creada con HTML, CSS y JavaScript, cuya función es encriptar y desencriptar mensajes. Utiliza el algoritmo de cifrado César, que consiste en sustituir cada letra del texto original por la letra que se encuentra tres posiciones más adelante en el alfabeto.",
-            "project-title-3": "CRUD Lista de Propiedades",
+            "project-title-3": "Lista de Empleados (CRUD)",
             "project-description-3": "Aplicación para gestionar datos de personas, con componente que muestre una lista de personas en el directorio src/components. Donde se pueden agregar nuevas personas, editar y eliminar. No utiliza Base de datos aún, los datos se guardan en un archivo JSON.",
             "project-title-4": "Libros Favoritos con Node.js",
             "project-description-4": "Aplicación web desarrollada con Node.js, cuya función es mostrar una lista de libros favoritos, con sus respectivos campos. Utiliza Base de Datos MongoDB, y el ORM Mongoose. Lenguaje de programación JavaScript. Cumple con las funciones básicas de un CRUD. Crear, Leer, Actualizar y Eliminar.",
