@@ -67,6 +67,11 @@ body::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
+::selection {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
 /* CSS Header que contiene la navegación sobre la página */
 .header {
     position: fixed;
