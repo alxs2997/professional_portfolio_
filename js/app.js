@@ -106,11 +106,33 @@ const typed = new Typed('.typed', {
 });
 
 const numero = document.getElementById('numero');
-let Cantidad = 0;
+let CantidadUno = 0;
 
-let tiempo = setInterval(() => {
-  if (Cantidad < 5) {
-    Cantidad++;
-    numero.textContent = Cantidad;
+let tiempo1 = setInterval(() => {
+  if (CantidadUno < 7) {
+    CantidadUno++;
+    numero.textContent = CantidadUno;
   }
-}, 500);
+}, 300);
+
+const numeroUno = document.getElementById('numeroUno');
+
+let CantidadDos = 0;
+
+let tiempo2 = setInterval(() => {
+  if (CantidadDos < 4) {
+    CantidadDos++;
+    numeroUno.textContent = CantidadDos;
+  }
+}, 300);
+
+const numeroDos = document.getElementById('numeroDos');
+
+let CantidadTres = 0;
+
+let tiempo3 = setInterval(() => {
+  if (CantidadTres < 5) {
+    CantidadTres++;
+    numeroDos.textContent = CantidadTres;
+  }
+}, 300);
