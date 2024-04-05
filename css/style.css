@@ -2,10 +2,11 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #0B666A;
-    --bg-color: #F2EAD3;
-    --bg-card-color: #dfd7bfe0;
-    --bg-footer-color: #dfd7bf;
+    --primary-color: #2D3250;
+    --bg-color: #ffffff;
+    --bg-card-color: #e9e9e9;
+    --bg-footer-color: #e9e9e9;
+    --text-color-tog: #ffffff;
     --border-radius: 0.8em;
     --transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
     --skills-bar-length: 0%;
@@ -39,6 +40,8 @@ body {
 }
 
 body.dark {
+    --primary-color: #ffffff;
+    --text-color-tog: #ffffff;
     --text-color: #50d890;
     --bg-color: #232931;
     --bg-card-color: #1d2127e1;
@@ -125,12 +128,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flags__item {
-    width: 20px;
+    width: 22px;
 }
 
 .flags__img {
     display: block;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .colors {
@@ -138,28 +142,27 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-between;
     height: 20px;
-    width: 100px;
+    width: 75px;
 }
 
 .colors__item {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid var(--text-color);
     background-color: var(--primary-color);
     cursor: pointer;
 }
 
 .colors__item--Navy {
-    background-color: #0B666A;
-}
-
-.colors__item--Salmon {
-    background-color: #CA4E79;
+    background-color: #2D3250;
 }
 
 .colors__item--Orange {
     background-color: #FF8551;
+}
+
+.colors__item--Green {
+    background-color: #50d890;
 }
 
 .main {
@@ -302,9 +305,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-color: #2d597734;
-    border: var(--primary-color) solid 1px;
+    border: var(--text-color-tog) solid 1px;
     border-radius: 20px;
-    color: var(--primary-color);
+    color: var(--text-color-tog);
     padding: 1em 1em;
     margin-top: 0;
     margin-bottom: 0;

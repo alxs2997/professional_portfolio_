@@ -47,7 +47,7 @@ function updateUIToUserConfig(config) {
 }
 
 // Recuperar la configuración del usuario del localStorage (si existe)
-const userConfig = JSON.parse(localStorage.getItem('userConfig')) || { darkMode: false };
+const userConfig = JSON.parse(localStorage.getItem('userConfig')) || { darkMode: true };
 updateUIToUserConfig(userConfig);
 
 toggleTheme.addEventListener('click', () => {
